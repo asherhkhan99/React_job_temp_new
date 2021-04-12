@@ -3,7 +3,7 @@ import React from "react";
 const JobCard = ({ pic, heading, word, icon, Job,jobType, location, price,premium }) => {
   return (
     <>
-      <div className="col-md-3 col-sm-6">
+      <div className="col-md-4 col-sm-6">
         <div className="grid-view brows-job-list">
           <div className="brows-job-company-img">
             <img src={pic} className="img-responsive" alt="" />

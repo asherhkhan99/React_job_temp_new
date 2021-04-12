@@ -8,7 +8,9 @@ import CreateJob from "./pages/CreateJob";
 import Payment from "./pages/Payment";
 import Pricing from "./pages/Pricing";
 import ClientProfile from "./pages/ClientProfile";
-import JobDetail from "./pages/J";
+// import JobDetail from "./pages/J";
+import Jobgrid from './pages/Jobsgrid';
+import Freelancingjobs from './pages/Freelancingjobs'
 
 const Routes = () => {
   return (
@@ -38,6 +40,17 @@ const Routes = () => {
         path="/clientProfile"
         render={(props) => <ClientProfile {...props} />}
       />
+      <Route
+        exact
+        path = '/jobsGrid'
+        render={(props) => <Jobgrid {...props} />}
+      />
+
+      <Route
+        exact
+        path = '/freelancingJobs'
+        render={(props) => <Freelancingjobs {...props} />}
+      />  
     </Switch>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import WorkCard from "/src/components/WorkCard";
+import WorkCard from "../components/WorkCard";
 import {data} from "../data/details";
 
 function HowitWorks() {
