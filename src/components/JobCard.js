@@ -1,6 +1,16 @@
 import React from "react";
 
-const JobCard = ({ pic, heading, word, icon, Job,jobType, location, price,premium }) => {
+const JobCard = ({ pic, name, jobtitle, icon, Job,jobType, location, rate,premium }) => {
+  const full = "full-time"
+  const part  = "part-time"
+  const free = "freelanc"
+  const entern = "enternship"
+  var setType;
+  if (Job === "Full Time") setType = full
+  else if(Job === "Part Time") setType = part
+  else if(Job === "Freelancer") setType = free
+  else setType = entern
+  
   return (
     <>
       <div className="col-md-4 col-sm-6">
@@ -10,18 +20,18 @@ const JobCard = ({ pic, heading, word, icon, Job,jobType, location, price,premiu
           </div>
           <div className="brows-job-position">
             <h3>
-              <a href="job-detail.html">{heading}</a>
+              <a href="job-detail.html">{name}</a>
             </h3>
 
             <p>
-              <span>{word}</span>
+              <span>{jobtitle}</span>
             </p>
           </div>
           <div className="job-position">
             <span className="job-num">{icon}</span>
           </div>
           <div className="brows-job-type">
-            <span className={jobType}>{Job}</span>
+            <span className={setType}>{Job}</span>
           </div>
           <ul className="grid-view-caption">
             <li>
@@ -36,7 +46,7 @@ const JobCard = ({ pic, heading, word, icon, Job,jobType, location, price,premiu
               <p>
                 <span className="brows-job-sallery">
                   <i className="fa fa-money"></i>
-                  {price}
+                  {rate}
                 </span>
               </p>
             </li>

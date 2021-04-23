@@ -1,8 +1,9 @@
 import React from 'react'
 import Searchfilter from '../components/Searchfilter'
-import {Freelancedata} from '../data/Freelancedata'
+// import {Freelancedata} from '../data/Freelancedata'
 import Freelancecard from '../components/Freelancecard'
 import Cardmap from '../components/Cardmap'
+import {Data} from '../data/client/JobsPosted'
 
 function Accdesign (){
     return(
@@ -13,7 +14,8 @@ function Accdesign (){
             <div className="container">
                 <Searchfilter/>
                 <div className='row'>
-                {Freelancedata.map(Cardmap)}
+                {/* {Freelancedata.map(Cardmap)} */}
+                {Data.map(Cardmap)}
                 </div>
                 <div className="col-md-12 col-sm-12">
 							<div className="text-center">

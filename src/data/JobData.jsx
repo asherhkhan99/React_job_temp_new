@@ -15,7 +15,7 @@ const JobsData = [
     word : "Google",
     icon :"5 Position",
     Job : "Full Time",
-    jobType : "full-time",
+    jobType : "QBL Park, C40",
     location : "QBL Park, C40",
     price : "$110 - 200",
     premium : "Premium"

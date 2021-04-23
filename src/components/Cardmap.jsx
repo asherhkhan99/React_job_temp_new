@@ -6,9 +6,11 @@ function Cardmap(val){
         <Freelancecard
         time = {val.time}
         rate = {val.rate}
-        heading = {val.heading}
-        designation ={val.designation}
-        class1 = {val.class1}
+        name = {val.name}
+        description = {val.description}
+        skills = {val.skills}
+        jobtitle ={val.jobtitle}
+        // class1 = {val.class1}
         />
 
         </>

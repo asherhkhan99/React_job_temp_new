@@ -2,7 +2,8 @@ import React from 'react'
 import Banner from '../components/Banner'
 import Img from '../img/banner-10.jpg'
 import Compsearch from '../components/Companysearch'
-import {JobsData} from '../data/JobData'
+// import {JobsData} from '../data/JobData'
+import {Data} from '../data/company/Jobposted'
 import Jobmap from '../components/Jobmap'
 
 
@@ -20,7 +21,8 @@ function Jobgrid(){
 			<div class="container">
                 <Compsearch/>
                 <div class="row extra-mrg">
-                {JobsData.map(Jobmap)}
+                {/* {JobsData.map(Jobmap)} */}
+                {Data.map(Jobmap)}
                 </div>
                 <div class="row">
 						<ul className="pagination">

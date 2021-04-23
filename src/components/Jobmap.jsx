@@ -7,13 +7,13 @@ function Jobmap(val){
         <>
         <Jobcard
             pic = {val.pic}
-            heading = {val.heading}
-            word = {val.word}
+            name = {val.name}
+            jobtitle = {val.jobtitle}
             icon ={val.icon}
             Job = {val.Job}
             jobType = {val.jobType}
             location = {val.location}
-            price = {val.price}
+            rate = {val.rate}
             premium = {val.premium}
 
         />
